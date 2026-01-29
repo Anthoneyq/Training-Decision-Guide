@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="VB Training">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#0f172a">
+  <meta name="description" content="Volleyball Training Decision Guide based on Dr. Andy Galpin's principles">
+  
+  <title>Volleyball Training Decision Guide</title>
+  
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="data:application/json;base64,ewogICJuYW1lIjogIlZvbGxleWJhbGwgVHJhaW5pbmcgRGVjaXNpb24gR3VpZGUiLAogICJzaG9ydF9uYW1lIjogIlZCIFRyYWluaW5nIiwKICAiZGVzY3JpcHRpb24iOiAiRGFpbHkgdHJhaW5pbmcgZGVjaXNpb25zIGJhc2VkIG9uIEdhbHBpbiBwcmluY2lwbGVzIiwKICAic3RhcnRfdXJsIjogIi4iLAogICJkaXNwbGF5IjogInN0YW5kYWxvbmUiLAogICJiYWNrZ3JvdW5kX2NvbG9yIjogIiMwZjE3MmEiLAogICJ0aGVtZV9jb2xvciI6ICIjMGYxNzJhIiwKICAib3JpZW50YXRpb24iOiAicG9ydHJhaXQiLAogICJpY29ucyI6IFsKICAgIHsKICAgICAgInNyYyI6ICJkYXRhOmltYWdlL3N2Zyt4bWw7YmFzZTY0LFBITjJaeUI0Yld4dWN6MGlhSFIwY0RvdkwzZDNkeTUzTXk1dmNtY3ZNakF3TUM5emRtY2lJSFpwWlhkQ2IzZzlJakFnTUNBeE9USWdNVGt5SWlCM2FXUjBhRDBpTVRreUlpQm9aV2xuYUhROUlqRTVNaUkrUEhKbFkzUWdkMmxrZEdnOUlqRTVNaUlnYUdWcFoyaDBQU0l4T1RJaUlITjBlV3hsUFNKbWFXeHNPaU13WmpFM01tRWlJSEo0UFNJek1pSXZQanh3WVhSb0lHUTlJazAwT0NBMk5HZ3hNREJoTVRZZ01UWWdNQ0F3SURFZ01UWXRNVFpXTkRoSE5qUWdNeklnTkRnZ016SjZUVFkwSURFd05IWTBPR2d4Tm1FeE5pQXhOaUF3SURBZ01TMHhOaUF4Tm1ndE1UWmhNVFlnTVRZZ01DQXdJREV0TVRZdE1UWjZJaUJtYVd4c1BTSjNhR2wwWlNJdlBqd3ZjM1puUGc9PSIsCiAgICAgICJzaXplcyI6ICIxOTJ4MTkyIiwKICAgICAgInR5cGUiOiAiaW1hZ2Uvc3ZnK3htbCIKICAgIH0KICBdCn0=">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxOTIgMTkyIiB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiI+PHJlY3Qgd2lkdGg9IjE5MiIgaGVpZ2h0PSIxOTIiIHN0eWxlPSJmaWxsOiMwZjE3MmEiIHJ4PSIzMiIvPjxwYXRoIGQ9Ik00OCA2NGgxMDBhMTYgMTYgMCAwIDEgMTYgMTZ2NDhIMzJWODBhMTYgMTYgMCAwIDEgMTYtMTZ6TTY0IDEwNHY0OGgxNmExNiAxNiAwIDAgMCAxNi0xNnYtMzJIMzJhMTYgMTYgMCAwIDAtMTYgMTZ2MTZoMzJ6IiBmaWxsPSJ3aGl0ZSIvPjwvc3ZnPg==">
+  <link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxOTIgMTkyIiB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiI+PHJlY3Qgd2lkdGg9IjE5MiIgaGVpZ2h0PSIxOTIiIHN0eWxlPSJmaWxsOiMwZjE3MmEiIHJ4PSIzMiIvPjxwYXRoIGQ9Ik00OCA2NGgxMDBhMTYgMTYgMCAwIDEgMTYgMTZ2NDhIMzJWODBhMTYgMTYgMCAwIDEgMTYtMTZ6TTY0IDEwNHY0OGgxNmExNiAxNiAwIDAgMCAxNi0xNnYtMzJIMzJhMTYgMTYgMCAwIDAtMTYgMTZ2MTZoMzJ6IiBmaWxsPSJ3aGl0ZSIvPjwvc3ZnPg==">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      color: #f1f5f9;
+      min-height: 100vh;
+      min-height: -webkit-fill-available;
+      line-height: 1.5;
+    }
+
+    html {
+      height: -webkit-fill-available;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      padding-bottom: 40px;
+    }
+
+    /* Header */
+    .header {
+      text-align: center;
+      margin-bottom: 24px;
+      padding-top: env(safe-area-inset-top);
+    }
+
+    .header h1 {
+      font-size: 22px;
+      font-weight: 700;
+      background: linear-gradient(90deg, #60a5fa, #34d399);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 4px;
+    }
+
+    .header p {
+      font-size: 12px;
+      color: #64748b;
+    }
+
+    /* Readiness Bar */
+    .readiness-container {
+      margin-bottom: 24px;
+    }
+
+    .readiness-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+    }
+
+    .readiness-label {
+      font-size: 11px;
+      color: #94a3b8;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    .readiness-score {
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    .readiness-bar {
+      height: 10px;
+      background: linear-gradient(90deg, #dc2626 0%, #f97316 25%, #eab308 50%, #84cc16 75%, #22c55e 100%);
+      border-radius: 5px;
+      position: relative;
+    }
+
+    .readiness-marker {
+      position: absolute;
+      top: -3px;
+      width: 16px;
+      height: 16px;
+      background: #fff;
+      border-radius: 50%;
+      transform: translateX(-50%);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      border: 3px solid currentColor;
+      transition: left 0.3s ease;
+    }
+
+    .readiness-labels {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 4px;
+    }
+
+    .readiness-labels span {
+      font-size: 9px;
+      font-weight: 600;
+    }
+
+    /* Progress */
+    .progress-container {
+      margin-bottom: 20px;
+    }
+
+    .progress-bar {
+      display: flex;
+      gap: 3px;
+    }
+
+    .progress-segment {
+      flex: 1;
+      height: 3px;
+      border-radius: 2px;
+      background: #334155;
+      transition: background 0.3s ease;
+    }
+
+    .progress-segment.completed {
+      background: #3b82f6;
+    }
+
+    .progress-segment.current {
+      background: #60a5fa;
+    }
+
+    .progress-info {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 8px;
+      font-size: 11px;
+      color: #64748b;
+    }
+
+    /* Question Card */
+    .question-card {
+      background: #1e293b;
+      border-radius: 16px;
+      padding: 24px;
+      border: 1px solid #334155;
+    }
+
+    .category-badge {
+      display: inline-block;
+      padding: 4px 12px;
+      background: #3b82f6;
+      border-radius: 20px;
+      font-size: 10px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      letter-spacing: 0.5px;
+    }
+
+    .question-text {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 6px;
+      line-height: 1.3;
+    }
+
+    .question-subtitle {
+      font-size: 13px;
+      color: #94a3b8;
+      margin-bottom: 20px;
+    }
+
+    /* Options */
+    .options {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .option-btn {
+      background: #0f172a;
+      border: 2px solid #334155;
+      border-radius: 12px;
+      padding: 14px 16px;
+      text-align: left;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      width: 100%;
+      color: #f1f5f9;
+    }
+
+    .option-btn:hover, .option-btn:focus {
+      border-color: #3b82f6;
+      background: #1e3a5f;
+      outline: none;
+    }
+
+    .option-btn:active {
+      transform: scale(0.98);
+    }
+
+    .option-label {
+      font-size: 15px;
+      font-weight: 500;
+      margin-bottom: 2px;
+    }
+
+    .option-sublabel {
+      font-size: 12px;
+      color: #94a3b8;
+    }
+
+    /* Back Button */
+    .back-btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: transparent;
+      border: 1px solid #475569;
+      border-radius: 8px;
+      color: #94a3b8;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .back-btn:hover {
+      background: #334155;
+    }
+
+    /* Results */
+    .zone-banner {
+      padding: 20px;
+      border-radius: 16px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .zone-banner-label {
+      font-size: 11px;
+      font-weight: 600;
+      opacity: 0.8;
+      letter-spacing: 1px;
+      margin-bottom: 4px;
+    }
+
+    .zone-banner-title {
+      font-size: 28px;
+      font-weight: 700;
+    }
+
+    /* Result Cards */
+    .result-card {
+      background: #1e293b;
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 16px;
+      border: 1px solid #334155;
+    }
+
+    .result-card.highlighted {
+      border-width: 2px;
+    }
+
+    .result-card-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+    }
+
+    .result-card-title {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .result-card-emphasis {
+      font-size: 13px;
+      color: #94a3b8;
+      font-style: italic;
+      margin-bottom: 16px;
+    }
+
+    .result-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+
+    @media (max-width: 400px) {
+      .result-columns {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .result-column-label {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      margin-bottom: 8px;
+    }
+
+    .result-column-label.do {
+      color: #22c55e;
+    }
+
+    .result-column-label.avoid {
+      color: #ef4444;
+    }
+
+    .result-list {
+      margin: 0;
+      padding: 0 0 0 16px;
+      font-size: 13px;
+      color: #cbd5e1;
+    }
+
+    .result-list li {
+      margin-bottom: 5px;
+    }
+
+    .result-meta {
+      display: flex;
+      gap: 16px;
+      padding-top: 12px;
+      border-top: 1px solid #334155;
+      flex-wrap: wrap;
+    }
+
+    .result-meta-item {
+      font-size: 12px;
+    }
+
+    .result-meta-item span:first-child {
+      color: #64748b;
+    }
+
+    /* Delivery Method */
+    .delivery-list {
+      margin: 0;
+      padding: 0 0 0 18px;
+      color: #cbd5e1;
+      font-size: 13px;
+    }
+
+    .delivery-list li {
+      margin-bottom: 5px;
+    }
+
+    /* Summary */
+    .summary-card {
+      background: #0f172a;
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 16px;
+      border: 1px solid #334155;
+    }
+
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 8px;
+    }
+
+    .summary-item {
+      font-size: 12px;
+    }
+
+    .summary-item-label {
+      color: #64748b;
+    }
+
+    .summary-item-value {
+      color: #cbd5e1;
+    }
+
+    /* Principles */
+    .principles-card {
+      background: linear-gradient(135deg, #1e3a5f 0%, #1e293b 100%);
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 20px;
+      border: 1px solid #3b82f6;
+    }
+
+    .principles-list {
+      margin: 0;
+      padding: 0 0 0 18px;
+      color: #cbd5e1;
+      font-size: 13px;
+      line-height: 1.7;
+    }
+
+    .principles-list li {
+      margin-bottom: 6px;
+    }
+
+    .principles-list strong {
+      color: #f1f5f9;
+    }
+
+    /* Reset Button */
+    .reset-btn {
+      width: 100%;
+      padding: 16px;
+      background: #3b82f6;
+      border: none;
+      border-radius: 12px;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+    .reset-btn:hover {
+      background: #2563eb;
+    }
+
+    .reset-btn:active {
+      transform: scale(0.98);
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      margin-top: 32px;
+      padding-top: 20px;
+      border-top: 1px solid #334155;
+      color: #64748b;
+      font-size: 11px;
+    }
+
+    .footer p {
+      margin-bottom: 4px;
+    }
+
+    /* Install Prompt */
+    .install-prompt {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      right: 20px;
+      background: #1e293b;
+      border: 1px solid #3b82f6;
+      border-radius: 12px;
+      padding: 16px;
+      display: none;
+      z-index: 1000;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+
+    .install-prompt.show {
+      display: block;
+    }
+
+    .install-prompt-content {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .install-prompt-text {
+      flex: 1;
+    }
+
+    .install-prompt-title {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+
+    .install-prompt-subtitle {
+      font-size: 12px;
+      color: #94a3b8;
+    }
+
+    .install-btn {
+      padding: 10px 16px;
+      background: #3b82f6;
+      border: none;
+      border-radius: 8px;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .close-prompt-btn {
+      padding: 8px;
+      background: transparent;
+      border: none;
+      color: #64748b;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    /* Hidden */
+    .hidden {
+      display: none !important;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <h1>VOLLEYBALL TRAINING DECISION GUIDE</h1>
+      <p>Based on Dr. Andy Galpin's principles</p>
+    </div>
+
+    <!-- Readiness Bar -->
+    <div class="readiness-container">
+      <div class="readiness-header">
+        <span class="readiness-label">READINESS CONTINUUM</span>
+        <span class="readiness-score" id="readinessScoreText">50%</span>
+      </div>
+      <div class="readiness-bar">
+        <div class="readiness-marker" id="readinessMarker" style="left: 50%;"></div>
+      </div>
+      <div class="readiness-labels">
+        <span style="color: #dc2626;">RECOVERY</span>
+        <span style="color: #22c55e;">PEAK</span>
+      </div>
+    </div>
+
+    <!-- Progress (shown during questions) -->
+    <div class="progress-container" id="progressContainer">
+      <div class="progress-bar" id="progressBar"></div>
+      <div class="progress-info">
+        <span id="progressText">Question 1 of 12</span>
+        <span id="categoryText">CONTEXT</span>
+      </div>
+    </div>
+
+    <!-- Question Card -->
+    <div class="question-card" id="questionCard">
+      <div class="category-badge" id="categoryBadge">CONTEXT</div>
+      <h2 class="question-text" id="questionText">Loading...</h2>
+      <p class="question-subtitle" id="questionSubtitle"></p>
+      <div class="options" id="optionsContainer"></div>
+      <button class="back-btn hidden" id="backBtn">← Back</button>
+    </div>
+
+    <!-- Results (hidden initially) -->
+    <div id="resultsContainer" class="hidden">
+      <!-- Zone Banner -->
+      <div class="zone-banner" id="zoneBanner">
+        <div class="zone-banner-label">TODAY'S TRAINING ZONE</div>
+        <div class="zone-banner-title" id="zoneTitle">MODERATE CAPACITY</div>
+      </div>
+
+      <!-- Delivery Method -->
+      <div class="result-card" id="deliveryCard">
+        <div class="result-card-label" style="color: #60a5fa;" id="deliveryLabel">DELIVERY METHOD</div>
+        <h3 class="result-card-title" id="deliveryTitle">Small Group Coaching</h3>
+        <p class="result-card-emphasis" id="deliveryDesc">Bucket athletes into 2-3 readiness groups</p>
+        <ul class="delivery-list" id="deliveryList"></ul>
+      </div>
+
+      <!-- 30-Minute Block -->
+      <div class="result-card highlighted" id="thirtyMinCard">
+        <div class="result-card-label" id="thirtyMinLabel">30-MINUTE TRAINING BLOCK</div>
+        <h3 class="result-card-title" id="thirtyMinTitle">BUILD / DEVELOP</h3>
+        <p class="result-card-emphasis" id="thirtyMinEmphasis">Progressive training, moderate stress for adaptation</p>
+        <div class="result-columns">
+          <div>
+            <div class="result-column-label do">✓ DO THIS</div>
+            <ul class="result-list" id="thirtyMinDo"></ul>
+          </div>
+          <div>
+            <div class="result-column-label avoid">✗ AVOID</div>
+            <ul class="result-list" id="thirtyMinAvoid"></ul>
+          </div>
+        </div>
+        <div class="result-meta">
+          <div class="result-meta-item"><span>VOLUME: </span><span id="thirtyMinVolume">80-90%</span></div>
+          <div class="result-meta-item"><span>INTENSITY: </span><span id="thirtyMinIntensity">RPE 6-7</span></div>
+        </div>
+      </div>
+
+      <!-- 2-Hour Practice -->
+      <div class="result-card highlighted" id="twoHourCard">
+        <div class="result-card-label" id="twoHourLabel">2-HOUR VOLLEYBALL PRACTICE</div>
+        <h3 class="result-card-title" id="twoHourTitle">NORMAL TRAINING</h3>
+        <p class="result-card-emphasis" id="twoHourEmphasis">Full practice with standard expectations</p>
+        <div class="result-columns">
+          <div>
+            <div class="result-column-label do">✓ FOCUS ON</div>
+            <ul class="result-list" id="twoHourDo"></ul>
+          </div>
+          <div>
+            <div class="result-column-label avoid">✗ AVOID</div>
+            <ul class="result-list" id="twoHourAvoid"></ul>
+          </div>
+        </div>
+        <div class="result-meta">
+          <div class="result-meta-item"><span>VOLUME: </span><span id="twoHourVolume">Normal</span></div>
+          <div class="result-meta-item"><span>INTENSITY: </span><span id="twoHourIntensity">RPE 6-7</span></div>
+        </div>
+      </div>
+
+      <!-- Summary -->
+      <div class="summary-card">
+        <div class="result-card-label" style="color: #64748b; margin-bottom: 12px;">YOUR INPUTS SUMMARY</div>
+        <div class="summary-grid" id="summaryGrid"></div>
+      </div>
+
+      <!-- Principles -->
+      <div class="principles-card">
+        <div class="result-card-label" style="color: #60a5fa; margin-bottom: 10px;">GALPIN PRINCIPLES APPLIED</div>
+        <ul class="principles-list">
+          <li><strong>Training is goal-directed adaptation</strong> — Every session drives one dominant adaptation</li>
+          <li><strong>Readiness dictates expression</strong> — You don't change the program, you change how hard you express it</li>
+          <li><strong>The 30-min block must support practice</strong> — It should enhance or get out of the way</li>
+          <li><strong>Only ONE system taxed</strong> — Neural, muscular, or metabolic. Never two.</li>
+          <li><strong>Athletes leave better, not just tired</strong> — Faster, looser, more coordinated</li>
+        </ul>
+      </div>
+
+      <!-- Reset Button -->
+      <button class="reset-btn" id="resetBtn">Start New Assessment</button>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>Based on the Huberman Lab Guest Series with Dr. Andy Galpin</p>
+      <p>Episodes 1-6: Fitness, Exercise, and Performance</p>
+    </div>
+  </div>
+
+  <!-- Install Prompt -->
+  <div class="install-prompt" id="installPrompt">
+    <div class="install-prompt-content">
+      <div class="install-prompt-text">
+        <div class="install-prompt-title">Add to Home Screen</div>
+        <div class="install-prompt-subtitle">Use this app offline anytime</div>
+      </div>
+      <button class="install-btn" id="installBtn">Install</button>
+      <button class="close-prompt-btn" id="closePromptBtn">×</button>
+    </div>
+  </div>
+
+  <script>
+    // ===== DATA =====
+    const questions = [
+      {
+        id: 'groupSize',
+        category: 'CONTEXT',
+        question: 'How many athletes are you working with today?',
+        subtitle: 'This determines your coaching resolution and delivery method',
+        options: [
+          { value: '1-3', label: '1-3 Athletes', sublabel: 'Individual attention possible', scoreModifier: 0 },
+          { value: '4-10', label: '4-10 Athletes', sublabel: 'Small group coaching', scoreModifier: 0 },
+          { value: '10-20', label: '10-20 Athletes', sublabel: 'Group-based coaching', scoreModifier: 0 },
+          { value: '20+', label: '20+ Athletes', sublabel: 'Station/system-based', scoreModifier: 0 }
+        ]
+      },
+      {
+        id: 'competitionProximity',
+        category: 'COMPETITION',
+        question: 'When is your next competition?',
+        subtitle: 'Competition proximity determines training stress allowance',
+        options: [
+          { value: 'today', label: 'Today', sublabel: 'Competition day', scoreModifier: -40 },
+          { value: '24h', label: 'Within 24 hours', sublabel: 'Pre-competition', scoreModifier: -30 },
+          { value: '48h', label: 'Within 48 hours', sublabel: 'Taper window', scoreModifier: -20 },
+          { value: '3-5days', label: '3-5 days out', sublabel: 'Light training week', scoreModifier: -10 },
+          { value: '6+days', label: '6+ days out', sublabel: 'Normal training', scoreModifier: 0 }
+        ]
+      },
+      {
+        id: 'travelStatus',
+        category: 'COMPETITION',
+        question: 'What is the travel situation?',
+        subtitle: 'Travel adds stress and reduces sleep quality',
+        options: [
+          { value: 'home', label: 'Home / Local', sublabel: 'Normal routine', scoreModifier: 0 },
+          { value: 'justReturned', label: 'Just returned from away', sublabel: 'Within 48h of travel', scoreModifier: -15 },
+          { value: 'preparing', label: 'Preparing to travel', sublabel: 'Leaving within 24h', scoreModifier: -10 },
+          { value: 'tournament', label: 'Multi-day tournament', sublabel: 'Extended travel period', scoreModifier: -20 }
+        ]
+      },
+      {
+        id: 'weeklyLoadHistory',
+        category: 'LOAD HISTORY',
+        question: 'How has the past 7-10 days of training been?',
+        subtitle: 'Accumulated load affects readiness to express force',
+        options: [
+          { value: 'light', label: 'Light / Recovery week', sublabel: 'Below normal volume', scoreModifier: 15 },
+          { value: 'normal', label: 'Normal training', sublabel: 'Standard volume', scoreModifier: 0 },
+          { value: 'heavy', label: 'Heavy training block', sublabel: 'Above normal volume', scoreModifier: -15 },
+          { value: 'veryHeavy', label: 'Very heavy / Tournament', sublabel: 'Significant accumulated fatigue', scoreModifier: -25 }
+        ]
+      },
+      {
+        id: 'painScreen',
+        category: 'HEALTH SCREEN',
+        question: 'Are any athletes reporting pain ≥3/10 or showing altered movement?',
+        subtitle: 'Pain and movement dysfunction are hard stops for high-intensity work',
+        options: [
+          { value: 'none', label: 'No pain reported', sublabel: 'All athletes cleared', scoreModifier: 0 },
+          { value: 'minor', label: '1-2 athletes with minor issues', sublabel: 'Can modify around it', scoreModifier: -10 },
+          { value: 'several', label: 'Several athletes affected', sublabel: 'Need significant modifications', scoreModifier: -20 },
+          { value: 'widespread', label: 'Widespread pain/soreness', sublabel: 'Team-wide issue', scoreModifier: -30 }
+        ]
+      },
+      {
+        id: 'sleepQuality',
+        category: 'HEALTH SCREEN',
+        question: "How is the team's sleep quality recently?",
+        subtitle: 'Sleep is the foundation of recovery and adaptation',
+        options: [
+          { value: 'good', label: 'Good sleep reported', sublabel: '7+ hours, quality rest', scoreModifier: 5 },
+          { value: 'okay', label: 'Average / Mixed', sublabel: 'Some athletes tired', scoreModifier: 0 },
+          { value: 'poor', label: 'Poor sleep reported', sublabel: 'Multiple athletes affected', scoreModifier: -15 },
+          { value: 'severe', label: 'Severe deficit', sublabel: 'Exams, travel, illness', scoreModifier: -25 }
+        ]
+      },
+      {
+        id: 'illnessStatus',
+        category: 'HEALTH SCREEN',
+        question: 'Is illness present in the team?',
+        subtitle: 'Illness requires immediate training modification',
+        options: [
+          { value: 'none', label: 'No illness', sublabel: 'Team is healthy', scoreModifier: 0 },
+          { value: 'minor', label: '1-2 athletes feeling off', sublabel: 'Monitor closely', scoreModifier: -10 },
+          { value: 'spreading', label: 'Illness spreading', sublabel: 'Multiple athletes affected', scoreModifier: -20 },
+          { value: 'widespread', label: 'Significant team illness', sublabel: 'Recovery priority', scoreModifier: -35 }
+        ]
+      },
+      {
+        id: 'warmupQuality',
+        category: 'ACUTE READINESS',
+        question: 'How do athletes look during warm-up?',
+        subtitle: 'Movement quality in warm-up predicts training capacity',
+        options: [
+          { value: 'sharp', label: 'Sharp / Springy / Fast', sublabel: 'High readiness signals', scoreModifier: 15 },
+          { value: 'okay', label: 'Okay but not sharp', sublabel: 'Moderate readiness', scoreModifier: 0 },
+          { value: 'flat', label: 'Flat / Slow', sublabel: 'Low neuromuscular readiness', scoreModifier: -15 },
+          { value: 'uncoordinated', label: 'Uncoordinated / Sluggish', sublabel: 'Very low readiness', scoreModifier: -25 }
+        ]
+      },
+      {
+        id: 'mentalState',
+        category: 'ACUTE READINESS',
+        question: "What is the team's mental/emotional state?",
+        subtitle: 'Psychological readiness affects training quality and injury risk',
+        options: [
+          { value: 'focused', label: 'Focused / Energized', sublabel: 'Ready to work', scoreModifier: 10 },
+          { value: 'normal', label: 'Normal / Neutral', sublabel: 'Standard energy', scoreModifier: 0 },
+          { value: 'distracted', label: 'Distracted / Low energy', sublabel: 'School stress, life events', scoreModifier: -10 },
+          { value: 'stressed', label: 'High stress / Emotional', sublabel: 'Significant external stressors', scoreModifier: -20 }
+        ]
+      },
+      {
+        id: 'practiceEmphasis',
+        category: 'PRACTICE CONTEXT',
+        question: 'What does the 2-hour volleyball practice need to emphasize today?',
+        subtitle: 'The 30-min block must support, not compete with, practice goals',
+        options: [
+          { value: 'technical', label: 'Technical / Skill acquisition', sublabel: 'Learning new skills, precision work', scoreModifier: 0 },
+          { value: 'tactical', label: 'Tactical / Systems', sublabel: 'Team plays, positioning', scoreModifier: 0 },
+          { value: 'scrimmage', label: 'High-intensity scrimmage', sublabel: 'Game-like conditions', scoreModifier: -10 },
+          { value: 'light', label: 'Light / Recovery day', sublabel: 'Easy touches, film review', scoreModifier: 10 }
+        ]
+      },
+      {
+        id: 'blockTiming',
+        category: 'PRACTICE CONTEXT',
+        question: 'When is the 30-minute training block?',
+        subtitle: 'Timing affects what type of work is appropriate',
+        options: [
+          { value: 'before', label: 'Before 2-hour practice', sublabel: 'Prime or prepare', scoreModifier: 0 },
+          { value: 'after', label: 'After 2-hour practice', sublabel: 'Supplement or recover', scoreModifier: -5 }
+        ]
+      },
+      {
+        id: 'seasonPhase',
+        category: 'PERIODIZATION',
+        question: 'What phase of the season are you in?',
+        subtitle: 'Season phase determines training emphasis and volume tolerance',
+        options: [
+          { value: 'offseason', label: 'Off-season', sublabel: 'Build capacity, high volume OK', scoreModifier: 10 },
+          { value: 'preseason', label: 'Pre-season', sublabel: 'Transition to sport-specific', scoreModifier: 5 },
+          { value: 'earlyseason', label: 'Early season', sublabel: 'Maintain while competing', scoreModifier: 0 },
+          { value: 'midseason', label: 'Mid-season', sublabel: 'Manage fatigue, maintain gains', scoreModifier: -5 },
+          { value: 'lateseason', label: 'Late season / Playoffs', sublabel: 'Peak performance priority', scoreModifier: -10 }
+        ]
+      }
+    ];
+
+    // ===== STATE =====
+    let currentStep = 0;
+    let answers = {};
+    let readinessScore = 50;
+
+    // ===== DOM ELEMENTS =====
+    const readinessScoreText = document.getElementById('readinessScoreText');
+    const readinessMarker = document.getElementById('readinessMarker');
+    const progressContainer = document.getElementById('progressContainer');
+    const progressBar = document.getElementById('progressBar');
+    const progressText = document.getElementById('progressText');
+    const categoryText = document.getElementById('categoryText');
+    const questionCard = document.getElementById('questionCard');
+    const categoryBadge = document.getElementById('categoryBadge');
+    const questionText = document.getElementById('questionText');
+    const questionSubtitle = document.getElementById('questionSubtitle');
+    const optionsContainer = document.getElementById('optionsContainer');
+    const backBtn = document.getElementById('backBtn');
+    const resultsContainer = document.getElementById('resultsContainer');
+    const resetBtn = document.getElementById('resetBtn');
+
+    // ===== FUNCTIONS =====
+    function getProgressColor(score) {
+      if (score <= 20) return '#dc2626';
+      if (score <= 40) return '#f97316';
+      if (score <= 60) return '#eab308';
+      if (score <= 80) return '#84cc16';
+      return '#22c55e';
+    }
+
+    function updateReadinessDisplay() {
+      const color = getProgressColor(readinessScore);
+      readinessScoreText.textContent = readinessScore + '%';
+      readinessScoreText.style.color = color;
+      readinessMarker.style.left = readinessScore + '%';
+      readinessMarker.style.color = color;
+    }
+
+    function updateProgressBar() {
+      progressBar.innerHTML = questions.map((q, idx) => {
+        let className = 'progress-segment';
+        if (idx < currentStep) className += ' completed';
+        else if (idx === currentStep) className += ' current';
+        return `<div class="${className}"></div>`;
+      }).join('');
+    }
+
+    function renderQuestion() {
+      const q = questions[currentStep];
+      
+      categoryBadge.textContent = q.category;
+      questionText.textContent = q.question;
+      questionSubtitle.textContent = q.subtitle;
+      progressText.textContent = `Question ${currentStep + 1} of ${questions.length}`;
+      categoryText.textContent = q.category;
+
+      optionsContainer.innerHTML = q.options.map((opt, idx) => `
+        <button class="option-btn" data-index="${idx}">
+          <div class="option-label">${opt.label}</div>
+          <div class="option-sublabel">${opt.sublabel}</div>
+        </button>
+      `).join('');
+
+      // Add click handlers
+      optionsContainer.querySelectorAll('.option-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const idx = parseInt(btn.dataset.index);
+          handleAnswer(q.id, q.options[idx]);
+        });
+      });
+
+      backBtn.classList.toggle('hidden', currentStep === 0);
+      updateProgressBar();
+    }
+
+    function handleAnswer(questionId, option) {
+      answers[questionId] = option;
+      
+      // Recalculate score
+      readinessScore = 50;
+      Object.values(answers).forEach(ans => {
+        readinessScore += ans.scoreModifier;
+      });
+      readinessScore = Math.max(0, Math.min(100, readinessScore));
+      updateReadinessDisplay();
+
+      if (currentStep < questions.length - 1) {
+        currentStep++;
+        renderQuestion();
+      } else {
+        showResults();
+      }
+    }
+
+    function goBack() {
+      if (currentStep > 0) {
+        const prevQ = questions[currentStep - 1];
+        if (answers[prevQ.id]) {
+          delete answers[prevQ.id];
+          // Recalculate score
+          readinessScore = 50;
+          Object.values(answers).forEach(ans => {
+            readinessScore += ans.scoreModifier;
+          });
+          readinessScore = Math.max(0, Math.min(100, readinessScore));
+          updateReadinessDisplay();
+        }
+        currentStep--;
+        renderQuestion();
+      }
+    }
+
+    function getPrescription() {
+      const blockTiming = answers.blockTiming?.value;
+      
+      if (readinessScore <= 20) {
+        return {
+          zone: 'RECOVERY',
+          color: '#dc2626',
+          thirtyMinBlock: {
+            title: 'RESTORE / RECOVER',
+            emphasis: 'Parasympathetic activation, blood flow, tissue care',
+            activities: ['Light mobility work (10-15 min)', 'Foam rolling / self-massage', 'Controlled breathing (box breathing, physiological sighs)', 'Light band work for blood flow (no fatigue)', 'Gentle dynamic stretching'],
+            avoid: ['Any high-intensity work', 'Plyometrics or jumping', 'Heavy loading', 'Speed work', 'New skill learning'],
+            volume: 'Minimal - just enough to move',
+            intensity: 'Very low (RPE 2-3)'
+          },
+          twoHourPractice: {
+            title: 'SKILL ONLY / LIGHT TOUCHES',
+            emphasis: 'Technical maintenance without physical stress',
+            activities: ['Ball handling drills at low intensity', 'Passing and setting fundamentals', 'Positional walk-throughs', 'Film review / mental prep', 'Light serving (no jump serves)'],
+            avoid: ['Scrimmaging', 'Jump training', 'Conditioning', 'High-rep blocking', 'Competitive drills'],
+            volume: 'Reduced by 50-70%',
+            intensity: 'Low (RPE 3-4)'
+          }
+        };
+      } else if (readinessScore <= 40) {
+        return {
+          zone: 'LOW CAPACITY',
+          color: '#f97316',
+          thirtyMinBlock: {
+            title: 'SUPPORT / MAINTAIN',
+            emphasis: 'Low-stress maintenance work, no adaptation pushing',
+            activities: ['Mobility and activation (8-10 min)', 'Bodyweight movements or light bands', 'Tempo strength work (slow, controlled)', 'Low-amplitude plyos (pogo hops, skips)', 'Core stability work'],
+            avoid: ['Max effort anything', 'High-volume jumping', 'Learning new movements', 'Conditioning that creates fatigue'],
+            volume: 'Moderate - 60-70% of normal',
+            intensity: 'Low-moderate (RPE 4-5)'
+          },
+          twoHourPractice: {
+            title: 'TECHNICAL FOCUS',
+            emphasis: 'Skill work with controlled intensity',
+            activities: ['Fundamental skill reinforcement', 'Controlled rally play', 'Serving and serve receive (moderate volume)', 'Position-specific technique', 'Short competitive games (low stakes)'],
+            avoid: ['Extended high-intensity scrimmaging', 'Heavy conditioning finishers', 'High-volume blocking/hitting'],
+            volume: 'Normal technical volume, reduced intensity',
+            intensity: 'Moderate (RPE 5-6)'
+          }
+        };
+      } else if (readinessScore <= 60) {
+        return {
+          zone: 'MODERATE CAPACITY',
+          color: '#eab308',
+          thirtyMinBlock: {
+            title: 'BUILD / DEVELOP',
+            emphasis: 'Progressive training, moderate stress for adaptation',
+            activities: ['Dynamic warm-up with activation (5-7 min)', 'Strength work: compound movements, moderate load', 'Plyometric training: box jumps, broad jumps (moderate volume)', 'Power development: med ball throws', 'Sport-specific movement prep'],
+            avoid: ['Max testing', 'Excessive volume that bleeds into practice'],
+            volume: '80-90% of normal training volume',
+            intensity: 'Moderate-high (RPE 6-7)'
+          },
+          twoHourPractice: {
+            title: 'NORMAL TRAINING',
+            emphasis: 'Full practice with standard expectations',
+            activities: ['Complete warm-up and skill progression', 'Serving and passing combinations', 'Offensive and defensive systems', 'Controlled scrimmage work', 'Position-specific development'],
+            avoid: ['Adding extra conditioning if not planned', 'Pushing through obvious fatigue signs'],
+            volume: 'Normal',
+            intensity: 'Standard (RPE 6-7)'
+          }
+        };
+      } else if (readinessScore <= 80) {
+        return {
+          zone: 'HIGH CAPACITY',
+          color: '#84cc16',
+          thirtyMinBlock: {
+            title: 'DEVELOP / EXPRESS',
+            emphasis: 'Quality training, push adaptation',
+            activities: ['Neural activation warm-up (5 min)', 'Strength training: working sets at challenging loads', 'Power work: jump training, reactive plyos', 'Speed development: short sprints, agility', 'Advanced skill work introduction possible'],
+            avoid: ['Grinding through excessive volume', 'Turning strength work into conditioning'],
+            volume: 'Full planned volume',
+            intensity: 'High (RPE 7-8)'
+          },
+          twoHourPractice: {
+            title: 'QUALITY TRAINING',
+            emphasis: 'Push for improvement, competitive intensity',
+            activities: ['High-quality skill repetitions', 'Game-speed scrimmaging', 'Competitive serve and serve receive', 'System execution under pressure', 'Conditioning can be included if planned'],
+            avoid: ['Junk volume - every rep should have purpose'],
+            volume: 'Full or slightly elevated',
+            intensity: 'High (RPE 7-8)'
+          }
+        };
+      } else {
+        return {
+          zone: 'PEAK PERFORMANCE',
+          color: '#22c55e',
+          thirtyMinBlock: {
+            title: 'EXPRESS / PERFORM',
+            emphasis: 'Neural priming, high intent, low volume',
+            activities: [blockTiming === 'before' ? 'Neural activation: explosive movements, low volume' : 'Speed/power maintenance: minimal, high quality', 'Potentiation work: jump priming, explosive throws', 'CNS activation drills', 'Sport-specific power movements', 'Quality over quantity - every rep maximal intent'],
+            avoid: ['Volume that creates fatigue', 'Anything that dulls neural sharpness', 'New movement learning', 'Metabolic work'],
+            volume: 'Low - 50-60% of max',
+            intensity: 'Very high intent (RPE 8-9 on each rep, but few reps)'
+          },
+          twoHourPractice: {
+            title: 'HIGH-PERFORMANCE TRAINING',
+            emphasis: 'Peak execution, game-like intensity',
+            activities: ['High-quality reps at game speed', 'Competitive scrimmaging', 'Clutch situation training', 'Full system execution', 'Peak serving and attacking'],
+            avoid: ['Conditioning that creates lasting fatigue', 'Excessive repetition volume', 'Introducing new concepts'],
+            volume: 'Moderate - quality over quantity',
+            intensity: 'Game-like (RPE 8-9)'
+          }
+        };
+      }
+    }
+
+    function getDeliveryMethod() {
+      const groupSize = answers.groupSize?.value;
+      switch(groupSize) {
+        case '1-3':
+          return {
+            title: 'Individual Attention',
+            description: 'Full individual screening and customization possible',
+            execution: ['Individual readiness check with each athlete', 'Personalized modifications based on individual status', 'Real-time coaching and cueing', 'Can adjust mid-session based on response']
+          };
+        case '4-10':
+          return {
+            title: 'Small Group Coaching',
+            description: 'Bucket athletes into 2-3 readiness groups',
+            execution: ['Quick group readiness scan during warm-up', 'Divide into "feeling good" and "needs modification" groups', 'Rotate attention between small clusters', 'Pre-plan 2 versions of each activity']
+          };
+        case '10-20':
+          return {
+            title: 'Group-Based Stations',
+            description: 'Pre-set stations with built-in modifications',
+            execution: ['Set up 3-4 stations representing different intensities', 'Athletes self-select or coach assigns based on quick check', 'Each station has clear instructions posted', 'Coach rotates to monitor quality']
+          };
+        case '20+':
+          return {
+            title: 'System-Driven',
+            description: 'Rules-based, minimal individual adjustment',
+            execution: ['One primary training emphasis for all athletes', 'Built-in self-limiting exercises', 'Clear start/stop signals', 'Individual modifications only for injury/illness']
+          };
+        default:
+          return null;
+      }
+    }
+
+    function showResults() {
+      questionCard.classList.add('hidden');
+      progressContainer.classList.add('hidden');
+      resultsContainer.classList.remove('hidden');
+
+      const prescription = getPrescription();
+      const delivery = getDeliveryMethod();
+
+      // Zone banner
+      document.getElementById('zoneBanner').style.background = prescription.color;
+      document.getElementById('zoneTitle').textContent = prescription.zone;
+
+      // Delivery method
+      if (delivery) {
+        document.getElementById('deliveryLabel').textContent = `DELIVERY METHOD — ${answers.groupSize.label}`;
+        document.getElementById('deliveryTitle').textContent = delivery.title;
+        document.getElementById('deliveryDesc').textContent = delivery.description;
+        document.getElementById('deliveryList').innerHTML = delivery.execution.map(item => `<li>${item}</li>`).join('');
+      }
+
+      // 30-minute block
+      document.getElementById('thirtyMinCard').style.borderColor = prescription.color;
+      document.getElementById('thirtyMinLabel').style.color = prescription.color;
+      document.getElementById('thirtyMinTitle').textContent = prescription.thirtyMinBlock.title;
+      document.getElementById('thirtyMinEmphasis').textContent = prescription.thirtyMinBlock.emphasis;
+      document.getElementById('thirtyMinDo').innerHTML = prescription.thirtyMinBlock.activities.map(item => `<li>${item}</li>`).join('');
+      document.getElementById('thirtyMinAvoid').innerHTML = prescription.thirtyMinBlock.avoid.map(item => `<li>${item}</li>`).join('');
+      document.getElementById('thirtyMinVolume').textContent = prescription.thirtyMinBlock.volume;
+      document.getElementById('thirtyMinIntensity').textContent = prescription.thirtyMinBlock.intensity;
+
+      // 2-hour practice
+      document.getElementById('twoHourCard').style.borderColor = prescription.color;
+      document.getElementById('twoHourLabel').style.color = prescription.color;
+      document.getElementById('twoHourTitle').textContent = prescription.twoHourPractice.title;
+      document.getElementById('twoHourEmphasis').textContent = prescription.twoHourPractice.emphasis;
+      document.getElementById('twoHourDo').innerHTML = prescription.twoHourPractice.activities.map(item => `<li>${item}</li>`).join('');
+      document.getElementById('twoHourAvoid').innerHTML = prescription.twoHourPractice.avoid.map(item => `<li>${item}</li>`).join('');
+      document.getElementById('twoHourVolume').textContent = prescription.twoHourPractice.volume;
+      document.getElementById('twoHourIntensity').textContent = prescription.twoHourPractice.intensity;
+
+      // Summary grid
+      const summaryGrid = document.getElementById('summaryGrid');
+      summaryGrid.innerHTML = Object.entries(answers).map(([key, value]) => {
+        const q = questions.find(q => q.id === key);
+        return `<div class="summary-item"><span class="summary-item-label">${q?.category}: </span><span class="summary-item-value">${value.label}</span></div>`;
+      }).join('');
+    }
+
+    function reset() {
+      currentStep = 0;
+      answers = {};
+      readinessScore = 50;
+      updateReadinessDisplay();
+      resultsContainer.classList.add('hidden');
+      questionCard.classList.remove('hidden');
+      progressContainer.classList.remove('hidden');
+      renderQuestion();
+    }
+
+    // ===== EVENT LISTENERS =====
+    backBtn.addEventListener('click', goBack);
+    resetBtn.addEventListener('click', reset);
+
+    // ===== PWA INSTALL =====
+    let deferredPrompt;
+    const installPrompt = document.getElementById('installPrompt');
+    const installBtn = document.getElementById('installBtn');
+    const closePromptBtn = document.getElementById('closePromptBtn');
+
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault();
+      deferredPrompt = e;
+      installPrompt.classList.add('show');
+    });
+
+    installBtn.addEventListener('click', async () => {
+      if (deferredPrompt) {
+        deferredPrompt.prompt();
+        const { outcome } = await deferredPrompt.userChoice;
+        deferredPrompt = null;
+        installPrompt.classList.remove('show');
+      }
+    });
+
+    closePromptBtn.addEventListener('click', () => {
+      installPrompt.classList.remove('show');
+    });
+
+    // iOS install hint
+    if (navigator.standalone === false) {
+      // iOS Safari, not in standalone mode
+      setTimeout(() => {
+        if (!localStorage.getItem('iosInstallHintShown')) {
+          installPrompt.querySelector('.install-prompt-subtitle').textContent = 'Tap Share then "Add to Home Screen"';
+          installBtn.style.display = 'none';
+          installPrompt.classList.add('show');
+          localStorage.setItem('iosInstallHintShown', 'true');
+        }
+      }, 3000);
+    }
+
+    // ===== SERVICE WORKER FOR OFFLINE =====
+    if ('serviceWorker' in navigator) {
+      // Create a simple service worker inline
+      const swCode = `
+        const CACHE_NAME = 'vb-training-v1';
+        self.addEventListener('install', (e) => {
+          self.skipWaiting();
+        });
+        self.addEventListener('activate', (e) => {
+          e.waitUntil(clients.claim());
+        });
+        self.addEventListener('fetch', (e) => {
+          e.respondWith(
+            caches.match(e.request).then((r) => r || fetch(e.request))
+          );
+        });
+      `;
+      const blob = new Blob([swCode], { type: 'application/javascript' });
+      const swUrl = URL.createObjectURL(blob);
+      
+      // Note: Service workers from blob URLs don't work in all browsers
+      // For full offline support, you'd need to host the SW file separately
+      // This is a simplified version for the single-file approach
+    }
+
+    // ===== INIT =====
+    updateReadinessDisplay();
+    renderQuestion();
+  </script>
+</body>
+</html>
